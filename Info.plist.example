@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- Informações básicas do app -->
+    <key>CFBundleDevelopmentRegion</key>
+    <string>$(DEVELOPMENT_LANGUAGE)</string>
+    
+    <key>CFBundleExecutable</key>
+    <string>$(EXECUTABLE_NAME)</string>
+    
+    <key>CFBundleIdentifier</key>
+    <string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+    
+    <key>CFBundleInfoDictionaryVersion</key>
+    <string>6.0</string>
+    
+    <key>CFBundleName</key>
+    <string>$(PRODUCT_NAME)</string>
+    
+    <key>CFBundlePackageType</key>
+    <string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
+    
+    <key>CFBundleShortVersionString</key>
+    <string>1.0</string>
+    
+    <key>CFBundleVersion</key>
+    <string>1</string>
+    
+    <!-- Versão mínima do macOS -->
+    <key>LSMinimumSystemVersion</key>
+    <string>15.0</string>
+    
+    <!-- IMPORTANTE: Descrições de permissões -->
+    <!-- Microfone -->
+    <key>NSMicrophoneUsageDescription</key>
+    <string>O Vox precisa acessar o microfone para transcrever sua voz em texto.</string>
+    
+    <!-- Reconhecimento de fala -->
+    <key>NSSpeechRecognitionUsageDescription</key>
+    <string>O Vox usa reconhecimento de fala para transcrever suas palavras em tempo real.</string>
+    
+    <!-- Categoria do app -->
+    <key>LSApplicationCategoryType</key>
+    <string>public.app-category.productivity</string>
+    
+    <!-- Permitir HTTPS arbitrary loads (se necessário) -->
+    <!-- REMOVER SE NÃO USAR REDE -->
+    <!--
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSAllowsArbitraryLoads</key>
+        <false/>
+    </dict>
+    -->
+    
+    <!-- High Resolution Capable -->
+    <key>NSHighResolutionCapable</key>
+    <true/>
+    
+    <!-- Principal class (SwiftUI App) -->
+    <key>NSPrincipalClass</key>
+    <string>NSApplication</string>
+    
+    <!-- Suporte a cenas -->
+    <key>UIApplicationSceneManifest</key>
+    <dict>
+        <key>UIApplicationSupportsMultipleScenes</key>
+        <true/>
+    </dict>
+    
+    <!-- Desativar se quiser que o app fique APENAS na status bar -->
+    <!-- (Já fazemos isso no código com setActivationPolicy) -->
+    <!--
+    <key>LSUIElement</key>
+    <true/>
+    -->
+    
+    <!-- Copyright -->
+    <key>NSHumanReadableCopyright</key>
+    <string>Copyright © 2026 Pedro Planel. All rights reserved.</string>
+</dict>
+</plist>
