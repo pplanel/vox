@@ -9,7 +9,9 @@ import SwiftUI
 
 struct StatusBarPopoverView: View {
     @EnvironmentObject var speechService: SpeechService
-    
+    @EnvironmentObject var executor: CommandExecutor
+    @Environment(\.openSettings) private var openSettings
+
     var body: some View {
         VStack(spacing: 16) {
             // Status atual
@@ -38,9 +40,9 @@ struct StatusBarPopoverView: View {
             .keyboardShortcut(speechService.isRecording ? "s" : "r", modifiers: [.command])
             
             // Botão de limpar transcrição
-            if !speechService.transcript.isEmpty {
+            if !executor.transcript.isEmpty {
                 Button("Limpar Transcrição") {
-                    speechService.transcript = ""
+                    executor.transcript = ""
                 }
                 .buttonStyle(.bordered)
             }
@@ -50,7 +52,9 @@ struct StatusBarPopoverView: View {
             // Botões de ação
             HStack {
                 Button("Ajustes…") {
-                    NSApp.sendAction(Selector(("showSettingsWindow:")), to: nil, from: nil)
+                    // App de barra de menus: ativar para a janela de Ajustes vir para frente
+                    NSApp.activate()
+                    openSettings()
                 }
                 .buttonStyle(.link)
                 
@@ -104,6 +108,8 @@ struct StatusBarPopoverView: View {
 }
 
 #Preview {
+    let speech = SpeechService()
     StatusBarPopoverView()
-        .environmentObject(SpeechService())
+        .environmentObject(speech)
+        .environmentObject(CommandExecutor(speech: speech))
 }

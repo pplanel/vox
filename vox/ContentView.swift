@@ -13,11 +13,12 @@ import SwiftUI
 // Este ContentView não é usado no aplicativo final
 // Mantido apenas para referência ou desenvolvimento futuro
 struct ContentView_NotUsed: View {
-    @StateObject private var speech = SpeechService()
+    @EnvironmentObject private var speech: SpeechService
+    @EnvironmentObject private var executor: CommandExecutor
 
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
-            TextEditor(text: $speech.transcript)
+            TextEditor(text: $executor.transcript)
                 .font(.body)
                 .scrollContentBackground(.hidden)
                 .padding(8)
@@ -34,9 +35,9 @@ struct ContentView_NotUsed: View {
                 statusView
                 Spacer()
                 Button("Limpar") {
-                    speech.transcript = ""
+                    executor.transcript = ""
                 }
-                .disabled(speech.transcript.isEmpty)
+                .disabled(executor.transcript.isEmpty)
 
                 Button {
                     Task { await speech.toggle() }
@@ -90,5 +91,8 @@ struct ContentView_NotUsed: View {
 }
 
 #Preview {
+    let speech = SpeechService()
     ContentView_NotUsed()
+        .environmentObject(speech)
+        .environmentObject(CommandExecutor(speech: speech))
 }

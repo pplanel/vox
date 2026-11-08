@@ -16,6 +16,7 @@ struct voxApp: App {
         Settings {
             SettingsView()
                 .environmentObject(appDelegate.speechService)
+                .environmentObject(appDelegate.executor)
         }
     }
 }

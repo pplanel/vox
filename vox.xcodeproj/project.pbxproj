@@ -8,50 +8,33 @@
 
 /* Begin PBXBuildFile section */
 		D85B74FD30986680007225C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85B74FC30986680007225C6 /* AppDelegate.swift */; };
-		D85B7505309866ED007225C6 /* PROJECT_SETUP.md in Resources */ = {isa = PBXBuildFile; fileRef = D85B7504309866ED007225C6 /* PROJECT_SETUP.md */; };
-		D85B750730986716007225C6 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D85B750630986716007225C6 /* README.md */; };
-		D85B75093098673A007225C6 /* MUDANCAS.md in Resources */ = {isa = PBXBuildFile; fileRef = D85B75083098673A007225C6 /* MUDANCAS.md */; };
-		D85B750B30986761007225C6 /* CHECKLIST.md in Resources */ = {isa = PBXBuildFile; fileRef = D85B750A30986761007225C6 /* CHECKLIST.md */; };
-		D85B750D30986780007225C6 /* ICONS_GUIDE.md in Resources */ = {isa = PBXBuildFile; fileRef = D85B750C30986780007225C6 /* ICONS_GUIDE.md */; };
-		D85B750F3098678D007225C6 /* Info.plist.example in Resources */ = {isa = PBXBuildFile; fileRef = D85B750E3098678D007225C6 /* Info.plist.example */; };
-		D85B751130986796007225C6 /* vox.entitlements.example in Resources */ = {isa = PBXBuildFile; fileRef = D85B751030986796007225C6 /* vox.entitlements.example */; };
-		D85B7513309867CB007225C6 /* TROUBLESHOOTING.md in Resources */ = {isa = PBXBuildFile; fileRef = D85B7512309867CB007225C6 /* TROUBLESHOOTING.md */; };
-		D85B751530986802007225C6 /* RESUMO_EXECUTIVO.md in Resources */ = {isa = PBXBuildFile; fileRef = D85B751430986802007225C6 /* RESUMO_EXECUTIVO.md */; };
-		D85B75173098682D007225C6 /* INICIO_RAPIDO.md in Resources */ = {isa = PBXBuildFile; fileRef = D85B75163098682D007225C6 /* INICIO_RAPIDO.md */; };
-		D85B751930986871007225C6 /* ARQUITETURA.md in Resources */ = {isa = PBXBuildFile; fileRef = D85B751830986871007225C6 /* ARQUITETURA.md */; };
-		D85B751B309868A4007225C6 /* INDICE.md in Resources */ = {isa = PBXBuildFile; fileRef = D85B751A309868A4007225C6 /* INDICE.md */; };
-		D85B751D3098696D007225C6 /* CORRECOES.md in Resources */ = {isa = PBXBuildFile; fileRef = D85B751C3098696D007225C6 /* CORRECOES.md */; };
-		D85B751F3098697E007225C6 /* Info.plist 2.example in Resources */ = {isa = PBXBuildFile; fileRef = D85B751E3098697E007225C6 /* Info.plist 2.example */; };
-		D85B752130986BD8007225C6 /* voxInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = D85B752030986BD8007225C6 /* voxInfo.plist */; };
 		D85B752330986BDF007225C6 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D85B752230986BDF007225C6 /* Info.plist */; };
-		D85B752530986C06007225C6 /* CONFIGURE_INFO_PLIST_AGORA.md in Resources */ = {isa = PBXBuildFile; fileRef = D85B752430986C06007225C6 /* CONFIGURE_INFO_PLIST_AGORA.md */; };
-		D85B752730986C25007225C6 /* COMANDOS_PRONTOS.md in Resources */ = {isa = PBXBuildFile; fileRef = D85B752630986C25007225C6 /* COMANDOS_PRONTOS.md */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		D81C1CB1309A7A91005523AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8592A62309809DC00959163 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8592A69309809DC00959163;
+			remoteInfo = vox;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		D81C1CA6309A773C005523AD /* voxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = voxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D81C1CB3309A7C50005523AD /* vox.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = vox.xctestplan; sourceTree = "<group>"; };
 		D8592A6A309809DC00959163 /* vox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D85B74FC30986680007225C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D85B7504309866ED007225C6 /* PROJECT_SETUP.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = PROJECT_SETUP.md; sourceTree = "<group>"; };
-		D85B750630986716007225C6 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		D85B75083098673A007225C6 /* MUDANCAS.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = MUDANCAS.md; sourceTree = "<group>"; };
-		D85B750A30986761007225C6 /* CHECKLIST.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHECKLIST.md; sourceTree = "<group>"; };
-		D85B750C30986780007225C6 /* ICONS_GUIDE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ICONS_GUIDE.md; sourceTree = "<group>"; };
-		D85B750E3098678D007225C6 /* Info.plist.example */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Info.plist.example; sourceTree = "<group>"; };
-		D85B751030986796007225C6 /* vox.entitlements.example */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = vox.entitlements.example; sourceTree = "<group>"; };
-		D85B7512309867CB007225C6 /* TROUBLESHOOTING.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = TROUBLESHOOTING.md; sourceTree = "<group>"; };
-		D85B751430986802007225C6 /* RESUMO_EXECUTIVO.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = RESUMO_EXECUTIVO.md; sourceTree = "<group>"; };
-		D85B75163098682D007225C6 /* INICIO_RAPIDO.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = INICIO_RAPIDO.md; sourceTree = "<group>"; };
-		D85B751830986871007225C6 /* ARQUITETURA.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ARQUITETURA.md; sourceTree = "<group>"; };
-		D85B751A309868A4007225C6 /* INDICE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = INDICE.md; sourceTree = "<group>"; };
-		D85B751C3098696D007225C6 /* CORRECOES.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CORRECOES.md; sourceTree = "<group>"; };
-		D85B751E3098697E007225C6 /* Info.plist 2.example */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Info.plist 2.example"; sourceTree = "<group>"; };
-		D85B752030986BD8007225C6 /* voxInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = voxInfo.plist; sourceTree = "<group>"; };
 		D85B752230986BDF007225C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D85B752430986C06007225C6 /* CONFIGURE_INFO_PLIST_AGORA.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CONFIGURE_INFO_PLIST_AGORA.md; sourceTree = "<group>"; };
-		D85B752630986C25007225C6 /* COMANDOS_PRONTOS.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = COMANDOS_PRONTOS.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		D81C1CA7309A773C005523AD /* voxTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = voxTests;
+			sourceTree = "<group>";
+		};
 		D8592A6C309809DC00959163 /* vox */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = vox;
@@ -60,6 +43,13 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D81C1CA3309A773C005523AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D8592A67309809DC00959163 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -73,26 +63,11 @@
 		D8592A61309809DC00959163 = {
 			isa = PBXGroup;
 			children = (
+				D81C1CB3309A7C50005523AD /* vox.xctestplan */,
 				D8592A6C309809DC00959163 /* vox */,
 				D85B74FC30986680007225C6 /* AppDelegate.swift */,
-				D85B7504309866ED007225C6 /* PROJECT_SETUP.md */,
-				D85B750630986716007225C6 /* README.md */,
-				D85B75083098673A007225C6 /* MUDANCAS.md */,
-				D85B750A30986761007225C6 /* CHECKLIST.md */,
-				D85B750C30986780007225C6 /* ICONS_GUIDE.md */,
-				D85B750E3098678D007225C6 /* Info.plist.example */,
-				D85B751030986796007225C6 /* vox.entitlements.example */,
-				D85B7512309867CB007225C6 /* TROUBLESHOOTING.md */,
-				D85B751430986802007225C6 /* RESUMO_EXECUTIVO.md */,
-				D85B75163098682D007225C6 /* INICIO_RAPIDO.md */,
-				D85B751830986871007225C6 /* ARQUITETURA.md */,
-				D85B751A309868A4007225C6 /* INDICE.md */,
-				D85B751C3098696D007225C6 /* CORRECOES.md */,
-				D85B751E3098697E007225C6 /* Info.plist 2.example */,
-				D85B752030986BD8007225C6 /* voxInfo.plist */,
 				D85B752230986BDF007225C6 /* Info.plist */,
-				D85B752430986C06007225C6 /* CONFIGURE_INFO_PLIST_AGORA.md */,
-				D85B752630986C25007225C6 /* COMANDOS_PRONTOS.md */,
+				D81C1CA7309A773C005523AD /* voxTests */,
 				D8592A6B309809DC00959163 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -101,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				D8592A6A309809DC00959163 /* vox.app */,
+				D81C1CA6309A773C005523AD /* voxTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,6 +84,29 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		D81C1CA5309A773C005523AD /* voxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D81C1CAA309A773C005523AD /* Build configuration list for PBXNativeTarget "voxTests" */;
+			buildPhases = (
+				D81C1CA2309A773C005523AD /* Sources */,
+				D81C1CA3309A773C005523AD /* Frameworks */,
+				D81C1CA4309A773C005523AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D81C1CB2309A7A91005523AD /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				D81C1CA7309A773C005523AD /* voxTests */,
+			);
+			name = voxTests;
+			packageProductDependencies = (
+			);
+			productName = voxTests;
+			productReference = D81C1CA6309A773C005523AD /* voxTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		D8592A69309809DC00959163 /* vox */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D8592A7A309809DD00959163 /* Build configuration list for PBXNativeTarget "vox" */;
@@ -137,9 +136,13 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 2660;
+				LastSwiftUpdateCheck = 2720;
 				LastUpgradeCheck = 2720;
 				TargetAttributes = {
+					D81C1CA5309A773C005523AD = {
+						CreatedOnToolsVersion = 27.2;
+						TestTargetID = D8592A69309809DC00959163;
+					};
 					D8592A69309809DC00959163 = {
 						CreatedOnToolsVersion = 26.6;
 					};
@@ -160,39 +163,37 @@
 			projectRoot = "";
 			targets = (
 				D8592A69309809DC00959163 /* vox */,
+				D81C1CA5309A773C005523AD /* voxTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D81C1CA4309A773C005523AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D8592A68309809DC00959163 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D85B752130986BD8007225C6 /* voxInfo.plist in Resources */,
-				D85B751930986871007225C6 /* ARQUITETURA.md in Resources */,
-				D85B751530986802007225C6 /* RESUMO_EXECUTIVO.md in Resources */,
-				D85B750D30986780007225C6 /* ICONS_GUIDE.md in Resources */,
-				D85B751F3098697E007225C6 /* Info.plist 2.example in Resources */,
-				D85B751130986796007225C6 /* vox.entitlements.example in Resources */,
-				D85B750F3098678D007225C6 /* Info.plist.example in Resources */,
-				D85B750730986716007225C6 /* README.md in Resources */,
-				D85B7513309867CB007225C6 /* TROUBLESHOOTING.md in Resources */,
-				D85B7505309866ED007225C6 /* PROJECT_SETUP.md in Resources */,
 				D85B752330986BDF007225C6 /* Info.plist in Resources */,
-				D85B751D3098696D007225C6 /* CORRECOES.md in Resources */,
-				D85B752730986C25007225C6 /* COMANDOS_PRONTOS.md in Resources */,
-				D85B75173098682D007225C6 /* INICIO_RAPIDO.md in Resources */,
-				D85B75093098673A007225C6 /* MUDANCAS.md in Resources */,
-				D85B751B309868A4007225C6 /* INDICE.md in Resources */,
-				D85B752530986C06007225C6 /* CONFIGURE_INFO_PLIST_AGORA.md in Resources */,
-				D85B750B30986761007225C6 /* CHECKLIST.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D81C1CA2309A773C005523AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D8592A66309809DC00959163 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -203,7 +204,65 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		D81C1CB2309A7A91005523AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D8592A69309809DC00959163 /* vox */;
+			targetProxy = D81C1CB1309A7A91005523AD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		D81C1CAB309A773C005523AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.2;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.pplanel.voxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/vox.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/vox";
+				XROS_DEPLOYMENT_TARGET = 27.2;
+			};
+			name = Debug;
+		};
+		D81C1CAC309A773C005523AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.2;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.pplanel.voxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/vox.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/vox";
+				XROS_DEPLOYMENT_TARGET = 27.2;
+			};
+			name = Release;
+		};
 		D8592A78309809DD00959163 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -340,19 +399,26 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = GQGH54PCCN;
-				ENABLE_APP_SANDBOX = NO;
+				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = NO;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = NO;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = YES;
+				ENABLE_RESOURCE_ACCESS_BLUETOOTH = NO;
 				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
 				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
 				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
 				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
 				ENABLE_RESOURCE_ACCESS_PHOTO_LIBRARY = NO;
+				ENABLE_RESOURCE_ACCESS_PRINTING = NO;
+				ENABLE_RESOURCE_ACCESS_USB = NO;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SELECTED_FILES = readwrite;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSMicrophoneUsageDescription = 10;
-				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = 1o;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "O Vox usa o microfone para transcrever o que você fala.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "O Vox usa o reconhecimento de fala para preparar o vocabulário personalizado (palavra de ativação, comandos e nomes como “Claude” e “Pi”).";
 				INFOPLIST_KEY_UILaunchStoryboardName = yes;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -390,19 +456,20 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = GQGH54PCCN;
-				ENABLE_APP_SANDBOX = NO;
+				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
-				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = YES;
 				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
 				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
 				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
 				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
 				ENABLE_RESOURCE_ACCESS_PHOTO_LIBRARY = NO;
+				ENABLE_TESTABILITY = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSMicrophoneUsageDescription = 10;
-				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = 1o;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "O Vox usa o microfone para transcrever o que você fala.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "O Vox usa o reconhecimento de fala para preparar o vocabulário personalizado (palavra de ativação, comandos e nomes como “Claude” e “Pi”).";
 				INFOPLIST_KEY_UILaunchStoryboardName = yes;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -431,6 +498,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D81C1CAA309A773C005523AD /* Build configuration list for PBXNativeTarget "voxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D81C1CAB309A773C005523AD /* Debug */,
+				D81C1CAC309A773C005523AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
 		D8592A65309809DC00959163 /* Build configuration list for PBXProject "vox" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

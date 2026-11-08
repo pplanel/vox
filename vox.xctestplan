@@ -1,0 +1,31 @@
+{
+  "configurations" : [
+    {
+      "id" : "DA2822D7-11D8-44B7-A5E6-F650328E1713",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false,
+    "performanceAntipatternCheckerEnabled" : true,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:vox.xcodeproj",
+      "identifier" : "D8592A69309809DC00959163",
+      "name" : "vox"
+    },
+    "testInteropMode" : "complete"
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:vox.xcodeproj",
+        "identifier" : "D81C1CA5309A773C005523AD",
+        "name" : "voxTests"
+      }
+    }
+  ],
+  "version" : 1
+}

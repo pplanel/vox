@@ -10,6 +10,7 @@ import SwiftUI
 /// Modal que aparece no Dock mostrando a transcrição em tempo real
 struct TranscriptionModalView: View {
     @EnvironmentObject var speechService: SpeechService
+    @EnvironmentObject var executor: CommandExecutor
     @Environment(\.dismiss) var dismiss
     
     var body: some View {
@@ -46,8 +47,8 @@ struct TranscriptionModalView: View {
                 ScrollView {
                     VStack(alignment: .leading, spacing: 8) {
                         // Texto finalizado
-                        if !speechService.transcript.isEmpty {
-                            Text(speechService.transcript)
+                        if !executor.transcript.isEmpty {
+                            Text(executor.transcript)
                                 .textSelection(.enabled)
                                 .foregroundStyle(.primary)
                         }
@@ -57,21 +58,19 @@ struct TranscriptionModalView: View {
                             Text(speechService.volatileText)
                                 .foregroundStyle(.secondary)
                                 .italic()
-                                .id("volatile")
                         }
+
+                        // Âncora estável para rolagem automática
+                        Color.clear
+                            .frame(height: 1)
+                            .id("bottom")
                     }
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding()
                 }
-                .onChange(of: speechService.volatileText) { _, _ in
-                    withAnimation {
-                        proxy.scrollTo("volatile", anchor: .bottom)
-                    }
-                }
-                .onChange(of: speechService.transcript) { _, _ in
-                    withAnimation {
-                        proxy.scrollTo("volatile", anchor: .bottom)
-                    }
+                // Um único observador: transcript e volatileText mudam no mesmo frame
+                .onChange(of: executor.transcript + speechService.volatileText) {
+                    proxy.scrollTo("bottom", anchor: .bottom)
                 }
             }
             .background(.quaternary.opacity(0.3), in: RoundedRectangle(cornerRadius: 8))
@@ -83,14 +82,14 @@ struct TranscriptionModalView: View {
                 } label: {
                     Label("Copiar", systemImage: "doc.on.doc")
                 }
-                .disabled(speechService.transcript.isEmpty)
+                .disabled(executor.transcript.isEmpty)
                 
                 Spacer()
                 
                 Button("Limpar") {
-                    speechService.transcript = ""
+                    executor.transcript = ""
                 }
-                .disabled(speechService.transcript.isEmpty)
+                .disabled(executor.transcript.isEmpty)
                 
                 Button {
                     Task {
@@ -111,11 +110,13 @@ struct TranscriptionModalView: View {
     private func copyToClipboard() {
         let pasteboard = NSPasteboard.general
         pasteboard.clearContents()
-        pasteboard.setString(speechService.transcript, forType: .string)
+        pasteboard.setString(executor.transcript, forType: .string)
     }
 }
 
 #Preview {
+    let speech = SpeechService()
     TranscriptionModalView()
-        .environmentObject(SpeechService())
+        .environmentObject(speech)
+        .environmentObject(CommandExecutor(speech: speech))
 }
